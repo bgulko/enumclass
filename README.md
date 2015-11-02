@@ -17,8 +17,9 @@ the classical enum / enum class construct.
 
 All code is in a single header file, with no outside libraries, or dependencies beyond the STL.
 
-Define a simple enum, use <tt>enumclass( foo, first, second, third );</tt>
-To instantiate the use <tt>enum { first, second, third } foo;</tt>
+Define a simple enum, use <tt>enumclass( foo_t, first, second, third );</tt> 
+To define the equivelent of <tt>enum foo_t { first, second, third };</tt>.
+To instantiate an instance simply use <tt>foo_t fooinst;</tt> .
 
 To override the default integral container type of int, with another type
 (e.g. unsigned long long) use <tt>enumclassT( foo, unsigned long long, first, second, third );</tt>
